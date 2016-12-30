@@ -30,6 +30,7 @@ Plugin 'terryma/vim-multiple-cursors'
 "" Colorthemes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jnurmine/Zenburn'
+Plugin 'flazz/vim-colorschemes'
 
 " auto complete
 Plugin 'Valloric/YouCompleteMe'
@@ -147,6 +148,8 @@ au BufWritePost *.py silent! :UpdateTags
 """""""""""""""""""""""""""""""""""""""""""""
 syntax on
 let &colorcolumn=80
+
+set tabstop=4
 
 au BufNewFile,BufRead *.py
 \ set tabstop=4 |
