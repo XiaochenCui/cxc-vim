@@ -13,7 +13,7 @@ function init {
 
     pip install flake8  # for vim-flake8
 
-	git clone https://github.com/flazz/vim-colorschemes.git && cp -r vim-colorschemes/colors ~/.vim && rm -rf vim-colorschemes
+    git clone https://github.com/flazz/vim-colorschemes.git && cp -r vim-colorschemes/colors ~/.vim && rm -rf vim-colorschemes
 
     update;
 
