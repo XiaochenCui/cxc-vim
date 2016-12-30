@@ -9,11 +9,11 @@ function update {
 function init {
     echo ">>> Set up Vundle ..."
     sudo rm -rf ~/.vim/bundle/Vundle.vim
-    sudo git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
     pip install flake8  # for vim-flake8
 
-	sudo git clone https://github.com/flazz/vim-colorschemes.git ~/.vim
+	git clone https://github.com/flazz/vim-colorschemes.git && cp -r vim-colorschemes/colors ~/.vim && rm -rf vim-colorschemes
 
     update;
 
