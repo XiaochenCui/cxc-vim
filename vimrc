@@ -32,9 +32,6 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'jnurmine/Zenburn'
 Plugin 'flazz/vim-colorschemes'
 
-" best auto complete tool I have ever used(jedi, supertab...)
-Plugin 'Valloric/YouCompleteMe'
-
 " python auto complete
 Plugin 'davidhalter/jedi-vim'
 
@@ -42,10 +39,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
-" show venv、git branch、file
-"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
-" better than powerline
+" airline
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
