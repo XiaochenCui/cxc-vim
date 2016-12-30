@@ -30,7 +30,6 @@ Plugin 'terryma/vim-multiple-cursors'
 "" Colorthemes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jnurmine/Zenburn'
-Plugin 'flazz/vim-colorschemes'
 
 " auto complete
 Plugin 'Valloric/YouCompleteMe'
