@@ -20,6 +20,7 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	sudo bash scripts/init-vim-ubuntu.sh
     sudo bash install-plugins.sh init
+    sudo bash install-powerline-fonts.sh
     echoo "Install finished."
 else
     echoo "The user cancels the operation."

@@ -235,17 +235,8 @@ set cursorline
 
 
 " ============================================
-" Jedi-vim config
+" airline config
 " ============================================
 
 
-" Rename variables
-let g:jedi#rename_command = "<leader>f"
-
-
-" Show usages of a name
-"let g:jedi#usages_command = "<leader>n"
-
-
-" Go to definition (or assignment)
-"let g:goto#goto_command = "<leader>d"
+let g:airline_powerline_fonts = 1
