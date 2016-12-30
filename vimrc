@@ -35,12 +35,19 @@ Plugin 'flazz/vim-colorschemes'
 " best auto complete tool I have ever used(jedi, supertab...)
 Plugin 'Valloric/YouCompleteMe'
 
+" python auto complete
+Plugin 'davidhalter/jedi-vim'
+
 " tree explore plugin
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " show venv、git branch、file
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+" better than powerline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " enhance za
 Plugin 'tmhedberg/SimpylFold'
@@ -231,3 +238,20 @@ function! ToggleFold()
 endfunction
 
 set cursorline
+
+
+" ============================================
+" Jedi-vim config
+" ============================================
+
+
+" Rename variables
+let g:jedi#rename_command = "<leader>f"
+
+
+" Show usages of a name
+"let g:jedi#usages_command = "<leader>n"
+
+
+" Go to definition (or assignment)
+"let g:goto#goto_command = "<leader>d"
