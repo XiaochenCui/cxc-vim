@@ -32,8 +32,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'jnurmine/Zenburn'
 Plugin 'flazz/vim-colorschemes'
 
-" python auto complete
-Plugin 'davidhalter/jedi-vim'
+" auto complete
+Plugin 'Valloric/YouCompleteMe'
 
 " tree explore plugin
 Plugin 'scrooloose/nerdtree'
