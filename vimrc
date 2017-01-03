@@ -227,7 +227,6 @@ set background=dark        " Assume a dark background
 if has('gui_running')
     colorscheme solarized
 else
-"    colorscheme molokai
 	colorscheme eldar
 endif
 
