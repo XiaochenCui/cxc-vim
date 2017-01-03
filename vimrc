@@ -61,6 +61,12 @@ Plugin 'elzr/vim-json'
 Plugin 'dyng/ctrlsf.vim'
 Plugin 'kylef/apiblueprint.vim'
 
+" A dark color scheme for vim based on Elflord
+Plugin 'agude/vim-eldar'
+
+" Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box
+Plugin 'python-mode/python-mode'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -80,6 +86,8 @@ filetype plugin indent on    " required
 " When vimrc is edited, reload it
 autocmd! BufWritePost ~/.vimrc source ~/.vimrc
 
+" change leader key to ","
+let mapleader=","
 
 set encoding=utf-8
 set fencs=utf-8,gb2312,gbk     " Sets the default encoding
@@ -150,6 +158,8 @@ syntax on
 let &colorcolumn=80
 
 set tabstop=4
+set shiftwidth=4
+set expandtab
 
 au BufNewFile,BufRead *.py
 \ set tabstop=4 |
@@ -217,7 +227,8 @@ set background=dark        " Assume a dark background
 if has('gui_running')
     colorscheme solarized
 else
-    colorscheme molokai
+"    colorscheme molokai
+	colorscheme eldar
 endif
 
 " 自定义代码折叠，折叠（和取消折叠）
@@ -241,5 +252,11 @@ set cursorline
 " airline config
 " ============================================
 
-
 let g:airline_powerline_fonts = 1
+
+
+" ============================================
+" python-mode config
+" ============================================
+
+let g:pymode_python = 'python3'

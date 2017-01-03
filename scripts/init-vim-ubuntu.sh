@@ -23,10 +23,9 @@ echoo ">>> Install vim ..."
 cd ~ && rm -rf vim && git clone https://github.com/vim/vim.git && cd vim
 ./configure --with-features=huge \
             --enable-multibyte \
-            --enable-pythoninterp \
-	    #--with-python-config-dir=/usr/lib/python2.7/config \
+            --disable-pythoninterp \
             --enable-python3interp \
-            #--with-python3-config-dir=/usr/lib/python3.4/config \
+            --with-python3-config-dir=$(python3-config --configdir) \
             --with-mac-arch=x86_64 \
             --enable-gui=gtk2 --enable-cscope --prefix=/usr
 make VIMRUNTIMEDIR=/usr/local/share/vim/vim80
