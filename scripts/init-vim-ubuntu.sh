@@ -32,7 +32,10 @@ make VIMRUNTIMEDIR=/usr/local/share/vim/vim80
 sudo make install
 
 # set vim as default editor after install complete
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/vim 1
 sudo update-alternatives --set editor /usr/bin/vim
+sudo update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
+sudo update-alternatives --set vi /usr/bin/vim
 
 # for plugins tag-misc, easy-tag, tagbar
 sudo apt-get install exuberant-ctags
