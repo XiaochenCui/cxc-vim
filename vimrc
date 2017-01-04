@@ -248,4 +248,6 @@ let g:airline_powerline_fonts = 1
 " python-mode config
 " ============================================
 
+let g:pymode = 0
 let g:pymode_python = 'python3'
+let g:pymode_rope_lookup_project = 0
