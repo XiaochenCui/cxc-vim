@@ -18,9 +18,9 @@ done
 read -p "Rebulid the vim and all plugins, Are you sure(Y/N)? " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-	sudo bash scripts/init-vim-ubuntu.sh
-    sudo bash install-plugins.sh init
-    sudo bash install-powerline-fonts.sh
+    bash scripts/init-vim-ubuntu.sh
+    bash install-plugins.sh init
+    bash install-powerline-fonts.sh
     echoo "Install finished."
 else
     echoo "The user cancels the operation."
