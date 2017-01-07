@@ -1,50 +1,25 @@
-# legolas-vim
-个人vim配置。最终效果图（由于性能问题，去掉了ctags，因为ycm是支持依赖库跳转的）：
+# Cxc-vim
 
-![qq20161017-0](https://cloud.githubusercontent.com/assets/8017604/19426340/4def15cc-946e-11e6-891b-924f52486144.png)
+My custom vim ide for python development:
 
-支持Python自动补全的最好插件是YouCompleteMe。而YouCompleteMe需要比较高版本的vim(>=7.4.143)，所以，需要编译安装vim，参见相关文档[1]。另外还需要一些C库，参见相关文档[2]。
+![demo](/img/demo.png)
 
-vim扩展管理器使用的是Vundle，参见相关文档[3]。
+# Install
 
-由于是为python开发打造。默认安装了pip等py开发必需品。公用开发工具默认安装（brew、zsh等）。
-
-
-# 自己的Vim-IDE 
-
-**支持Ubuntu（自动编译最新版vim）、centos（默认使用系统自带vim，用户可能需要自行升级，可参考ubuntu脚本）、Mac OSX（默认基于brew安装新版vim）**，一键安装：
+Run the following command to install:
 
     cd ~ && rm -rf cxc-vim && git clone git@github.com:XiaochenCui/cxc-vim.git && cd cxc-vim && bash install.sh
 
-如果用户修改了vimrc配置文件，运行以下命令更新即可：
+Run the following command to update after modify .vimrc:
 
     sudo bash install-plugins.sh
 
 
-# 问题集锦
+# Keymap
 
-1. 安装过程中打开vim可能会提示找不到syntax.vim或者配色。syntax做一下ln s 操作即可。配色安装完毕会自动解决。
+Use ngt to switch between tabs, e.g: 2gt for switch to 2nd tab.
 
-2. mac上有好用的brew。可以直接安装8.0以上版本的vim。可参考[Mac环境配置及python包安装的那些坑](http://www.ttwshell.com/article/mac-env-and-python-package-install-errors.html)：
-
-        brew update
-        export PATH=/usr/local/bin:$PATH  # 在／etc/profile 添加一下语句（使用zsh的在~/.zshrc添加即可）
-
-3. mac由于并没有直接替换系统自带的vim。所以其他需要vim支持的工具需要修改配置。例如git：
-
-        git config --global core.editor "/usr/local/bin/vim"
-
-4. 关于字体
-
-    [powerline-fonts](https://github.com/powerline/fonts)已经去掉了monaco_for_powerline。但是iterm2默认字体monaco非常好看，为了使用monaco并解决特殊符号乱码问题，所以Backup了一份。会自动安装。用户手动设置下iterm2字体配置即可（可搜索）。
-
-
-# 快捷键说明
-
-1. NERDTree有按横向纵向布局模式打开文件的快捷，直接看help信息即可。
-2. tab切换使用ngt即可。例如切换到第二个tab页，输入2gt。
-
-## 自定义快捷键
+## Customed hotkey
 
 | 命令 | 说明 |
 | :--: | :--: |

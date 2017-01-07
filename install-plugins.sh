@@ -18,7 +18,7 @@ function init {
 
     update;
 
-    cd ~/.vim/bundle/YouCompleteMe && git submodule update --init --recursive && sudo ./install.py
+    cd ~/.vim/bundle/YouCompleteMe && git submodule update --init --recursive && sudo ./install.py --clang-completer
 }
 
 
