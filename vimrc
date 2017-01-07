@@ -27,11 +27,6 @@ Plugin 'bronson/vim-trailing-whitespace'
 " multiple selections
 Plugin 'terryma/vim-multiple-cursors'
 
-"" Colorthemes
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'jnurmine/Zenburn'
-Plugin 'flazz/vim-colorschemes'
-
 " auto complete
 Plugin 'Valloric/YouCompleteMe'
 
@@ -51,7 +46,6 @@ Plugin 'kien/ctrlp.vim'
 
 " Syntaxes
 Plugin 'Glench/Vim-Jinja2-Syntax'
-Plugin 'othree/html5.vim'
 Plugin 'vim-scripts/nginx.vim'
 Plugin 'fatih/vim-go'
 Plugin 'othree/javascript-libraries-syntax.vim'
@@ -63,9 +57,6 @@ Plugin 'kylef/apiblueprint.vim'
 
 " A dark color scheme for vim based on Elflord
 Plugin 'agude/vim-eldar'
-
-" Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box
-Plugin 'python-mode/python-mode'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -248,4 +239,6 @@ let g:airline_powerline_fonts = 1
 " python-mode config
 " ============================================
 
+let g:pymode = 0
 let g:pymode_python = 'python3'
+let g:pymode_rope_lookup_project = 0
