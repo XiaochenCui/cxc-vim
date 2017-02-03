@@ -39,6 +39,7 @@ sudo update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
 sudo update-alternatives --set vi /usr/bin/vim
 
 sudo ln -sf /usr/bin/vim /usr/local/bin/vim
+sudo ln -sf /usr/share/vim /usr/local/share/vim
 
 # for plugins tag-misc, easy-tag, tagbar
 sudo apt-get install exuberant-ctags
