@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+function echoo {
+    echo -e "\n\033[32m $1 \033[0m"
+}
+
 function update {
     cp vimrc $HOME/.vimrc
     sudo vim +PluginClean +qall
@@ -7,7 +11,7 @@ function update {
 }
 
 function init {
-    echo ">>> Set up Vundle ..."
+    echoo ">>> Set up Vundle ..."
     sudo rm -rf ~/.vim/bundle/Vundle.vim
     sudo chmod 777 ~/.vim/bundle
     git clone git@github.com:VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
