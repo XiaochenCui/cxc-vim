@@ -12,7 +12,7 @@ function init {
     sudo chmod 777 ~/.vim/bundle
     git clone git@github.com:VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-    sudo -H pip install flake8  # for vim-flake8
+    pip install flake8  # for vim-flake8
 
     git clone https://github.com/flazz/vim-colorschemes.git && sudo cp -r vim-colorschemes/colors ~/.vim && rm -rf vim-colorschemes
 
