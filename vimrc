@@ -151,6 +151,8 @@ let &colorcolumn=80
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set hlsearch
+nnoremap <leader>h :nohlsearch<CR>
 
 au BufNewFile,BufRead *.py
 \ set tabstop=4 |
@@ -205,11 +207,7 @@ let g:Powerline_symbols = 'fancy'
 
 " color scheme
 set background=dark        " Assume a dark background
-if has('gui_running')
-    colorscheme solarized
-else
-    colorscheme eldar
-endif
+colorscheme eldar
 
 " 自定义代码折叠，折叠（和取消折叠）
 nnoremap <space> za
