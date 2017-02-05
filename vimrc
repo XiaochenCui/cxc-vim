@@ -240,3 +240,6 @@ let g:airline_powerline_fonts = 1
 let g:pymode = 0
 let g:pymode_python = 'python3'
 let g:pymode_rope_lookup_project = 0
+
+
+nnoremap <F12> :%s/\n\n/\r/g<CR>:noh<CR>
