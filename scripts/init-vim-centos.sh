@@ -11,7 +11,6 @@ cd ~ && rm -rf vim && git clone git@github.com:vim/vim.git && cd vim
             --enable-rubyinterp=yes \
             --enable-pythoninterp=yes \
             --with-python-config-dir=/usr/lib64/python2.7/config \
-            --enable-perlinterp=yes \
             --enable-luainterp=yes \
             --enable-cscope \
             --prefix=/usr/local
