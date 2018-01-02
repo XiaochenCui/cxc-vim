@@ -23,7 +23,7 @@ vim扩展管理器使用的是异步工具[vim-plug](https://github.com/junegunn
 
 **支持Ubuntu、Centos（需要先处理下问题5 sudo vim的问题）、Mac OSX（默认基于brew安装新版vim）**，一键安装：
 
-    cd ~ && rm -rf legolas-vim && git clone https://github.com/TTWShell/legolas-vim.git && cd legolas-vim && bash install.sh INIT
+    cd ~ && rm -rf cxc-vim && git clone git@github.com:XiaochenCui/cxc-vim.git && cd cxc-vim && bash install.sh INIT
 
 如果用户修改了vimrc配置文件，运行以下命令更新即可：
 

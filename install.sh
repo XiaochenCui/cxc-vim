@@ -37,7 +37,7 @@ backup
 
 case $platform in
     Centos)
-        sudo bash scripts/init-vim-centos.sh
+        bash scripts/init-vim-centos.sh
         ;;
     Ubuntu)
         sudo bash scripts/init-vim-ubuntu.sh
