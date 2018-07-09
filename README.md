@@ -1,6 +1,6 @@
 # cxc-vim
 
-此项目来源于 [占恒](https://github.com/TTWShell) 的 vim 整合项目 [legolas-vim](https://github.com/TTWShell/legolas-vim)，修改了一些自定义配置，同时优化了一下安装过程
+此项目基于 [占恒](https://github.com/TTWShell) 的 vim 整合项目 [legolas-vim](https://github.com/TTWShell/legolas-vim)，修改了一些自定义配置，同时优化了一下安装过程
 
 个人 vim 配置。**支持 python、go 等自动提示，支持 python、go 的函数跳转（python 支持虚拟环境）。** 最终效果图（函数列表的 feature 已移除，因为大项目会导致性能问题）：
 
